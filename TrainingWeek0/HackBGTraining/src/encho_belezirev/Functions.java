@@ -177,31 +177,31 @@ public class Functions {
         ArrayList<Short> numbersInImages = new ArrayList<Short>();
         int[] foundElements = new int[256];
         for (int i = 0; i < image.length; i++) {
-            for (int j = 0; j < image[i].length; j++) {
-                numbersInImages.add(image[i][j]);
+            for (int j = 0; j < image.length; j++) {
+                foundElements[image[i][j]] += 1;
             }
         }
 
-        int count = 1;
-        for (int i = 1; i < numbersInImages.size(); i++) {
-            short numberToFind = numbersInImages.get(i - 1);
-            if (isNumberExist(numberToFind, foundElements))
-                continue;
-            for (int j = i; j < numbersInImages.size(); j++) {
-                short nextNumber = numbersInImages.get(j);
-                if (numberToFind == nextNumber) {
-                    count++;
-                }
-            }
-            foundElements[numberToFind] = count;
-            count = 1;
-        }
+//        int count = 1;
+//        for (int i = 1; i < numbersInImages.size(); i++) {
+//            short numberToFind = numbersInImages.get(i - 1);
+//            if (isNumberExist(numberToFind, foundElements))
+//                continue;
+//            for (int j = i; j < numbersInImages.size(); j++) {
+//                short nextNumber = numbersInImages.get(j);
+//                if (numberToFind == nextNumber) {
+//                    count++;
+//                }
+//            }
+//            foundElements[numberToFind] = count;
+//            count = 1;
+//        }
         return foundElements;
     }
 
     // Problem 11 - HW
 
-    // Problem 12
+    // Problem 12 - fix
     public static int getOddOccurrence(int... array) {
         ArrayList<Integer> foundElements = new ArrayList<Integer>();
         int countElement = 1;
@@ -308,7 +308,7 @@ public class Functions {
         return reversedString;
     }
 
-    // Problem 18
+    // Problem 18 - fix
     private static String reverseWord(String word) {
         String reversedWord = new String();
         for (int i = word.length() - 1; i >= 0; i--) {
