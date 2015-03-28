@@ -25,7 +25,6 @@ public class FaultyProblem7 {
             return high;
         if (array[low] == element)
             return low;
-
         return -1; // not found
     }
 }
