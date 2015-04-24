@@ -32,21 +32,21 @@ public class Collections1Program {
         // System.out.println(ints.getElement(i));
         // }
 
-         Problem3<Integer> ints = new Problem3<Integer>(3);
-         ints.offer(1);
-         ints.offer(2);
-         ints.offer(3);
-         ints.offer(4);
-         ints.offer(5);
-        
-         ints.offer(6);
-         ints.offer(7);
-         ints.offer(8);
-        
-         ints.offer(9);
-         ints.offer(10);
-         ints.offer(11);
-         System.out.println(ints.toString());
+        // Problem3<Integer> ints = new Problem3<Integer>(3);
+        // ints.offer(1);
+        // ints.offer(2);
+        // ints.offer(3);
+        // ints.offer(4);
+        // ints.offer(5);
+        //
+        // ints.offer(6);
+        // ints.offer(7);
+        // ints.offer(8);
+        //
+        // ints.offer(9);
+        // ints.offer(10);
+        // ints.offer(11);
+        // System.out.println(ints.toString());
 
         // Collection<String> ints = new ArrayList<String>();
         // ints.add("one");
@@ -105,26 +105,28 @@ public class Collections1Program {
         // Problem10.countOccurances("Ninjas are all over the place! We are all going to die!");
         // System.out.println(Problem10.readableHashMap(mapOcc));
 
-//        Set<Integer> A = new HashSet<>();
-//        A.add(1);
-//        A.add(2);
-//        A.add(3);
-//        A.add(4);
-//        A.add(5);
-//        A.add(6);
-//        Set<Integer> B = new HashSet<>();
-//        B.add(4);
-//        B.add(5);
-//        B.add(9);
-//        B.add(10);
-//        Set<Integer> C = new HashSet<>();
-//        C.add(5);
-//        C.add(100);
-//        C.add(200);
-//        C.add(300);
-//        
-//        
-//        System.out.println(Problem6.duplicate(A,B,C));
+        // Set<Integer> A = new HashSet<>();
+        // A.add(1);
+        // A.add(2);
+        // A.add(3);
+        // A.add(4);
+        // A.add(5);
+        // A.add(6);
+        // Set<Integer> B = new HashSet<>();
+        // B.add(4);
+        // B.add(5);
+        // B.add(9);
+        // B.add(10);
+        // Set<Integer> C = new HashSet<>();
+        // C.add(5);
+        // C.add(100);
+        // C.add(200);
+        // C.add(300);
+        //
+        //
+        // System.out.println(Problem6.duplicate(A,B,C));
+
+
     }
 
 }
